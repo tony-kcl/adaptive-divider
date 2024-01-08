@@ -1,7 +1,8 @@
 name: adaptive_divider
 description: A Flutter package to provide a adaptive divider.
-version: 1.0.0
-homepage:
+version: 1.0.1
+repository: https://github.com/tony-kcl/adaptive-divider
+homepage: https://github.com/tony-kcl/adaptive-divider
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
