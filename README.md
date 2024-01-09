@@ -1,4 +1,4 @@
-A package that can handle divider by direction, and provide rounded divider.
+A Divider that can easily adding to flex widgets, such as Columns and Rows, boasting rounded corners for added visual appeal.
 
 ## Getting started
 
@@ -10,9 +10,22 @@ import 'package:adaptive_divider/adaptive_divider.dart';
 ## Usage
 
 ```dart
-AdaptiveDivider(
-radius: 8,
-thickness: 3,
-color: Colors.amber,
-),
+build(BuildContext context) {
+    List<Widget> children = [
+        WidgetA(),
+        AdaptiveDivider(),
+        WidgetB(),
+        AdaptiveDivider(),
+        WidgetC(),
+    ];
+    if (row) {
+        return Row(
+            children: children,
+        );
+    } else {
+        return Column(
+            children: children,
+        );
+    }
+}
 ```
